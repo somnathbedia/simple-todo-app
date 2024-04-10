@@ -1,5 +1,5 @@
 .main-container {
-  width: 400px;
+  width: 500px;
   display: grid;
   grid-template-columns: 1fr;
   margin-left: auto;

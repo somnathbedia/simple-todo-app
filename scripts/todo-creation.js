@@ -13,7 +13,6 @@ inputElement.addEventListener("keypress", (event) => {
     });
     inputElement.value = "";
     saveToStorage(todos);
-    alert("You Task has been Added");
     location.reload();
     return;
   }
@@ -23,7 +22,17 @@ function saveToStorage(todos) {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-addButtonElement.addEventListener("click", (event) => {});
+addButtonElement.addEventListener("click", (event) => {
+  todos.push({
+    id: Math.floor(Math.random() * 1000),
+    description: inputElement.value,
+    done: false,
+  });
+  inputElement.value = "";
+  saveToStorage(todos);
+  location.reload();
+  return;
+});
 const todoContentElem = document.querySelector(".js-todo-content");
 
 let todoHTML = generateHTMLForTodos();
