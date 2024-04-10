@@ -1,0 +1,54 @@
+.main-container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 100px;
+}
+
+.text-add-field {
+  display: flex;
+}
+
+.input-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.generate-todo {
+  width: 100%;
+  padding: 2px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.todos {
+  display: flex;
+  margin-top: 10px;
+  background-color: rgb(222, 229, 232);
+  justify-content: center;
+  align-items: center;
+}
+
+input.done-checkbox {
+  width: 28px;
+  height: 20px;
+}
+
+.description-container {
+  color: rgb(0, 0, 0);
+  flex: 1;
+  /* background-color: rgb(161, 55, 71);
+    border-radius: 3px; */
+  font-family: Arial;
+}
+.overline {
+  text-decoration: line-through;
+}
+.todo-description {
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
